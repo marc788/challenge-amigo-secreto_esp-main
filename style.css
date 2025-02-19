@@ -217,4 +217,12 @@ ul {
     }
   }
 
+  @media only screen and (max-width: 667px) and (orientation: portrait) {
+    
+  }
+  
+  @media only screen and (max-width: 667px) and (orientation: landscape) {
+    
+  }
+
   
