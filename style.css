@@ -200,3 +200,21 @@ ul {
     transform: scale(1.05);
     color: var(--color-white);
 }
+
+@media (max-width: 767px) {
+    #amigo {
+      font-size: 16px;
+      padding: 8px;
+    }
+  
+    #listaAmigos li {
+      font-size: 14px;
+    }
+  
+    #resultado {
+      font-size: 18px;
+      padding: 12px;
+    }
+  }
+
+  
