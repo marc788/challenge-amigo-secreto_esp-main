@@ -25,10 +25,17 @@ function actualizarLista() {
     listaAmigos.innerHTML = "";
 for (let i = 0; i < amigos.length; i++) {
     let li = document.createElement("li");
-    li.textContent = amigos[i];
+    let emoji = obtenerEmojiAleatorio();
+    li.textContent = `${emoji} ${amigos[i]}`;
     listaAmigos.appendChild(li);
   }
 }
+
+function obtenerEmojiAleatorio() {
+    const emojis = ["🙂", "😊", "😄", "😆", "😁", "😃", "🤩", "😍", "🥰", "😘", "😗", "😙", "😚", "😋", "😛", "😜", "🤪", "😝", "🤑", "🤗", "🤭", "🤫", "🤔", "🤐", "🤨", "😐", "😑", "😶", "😏", "😒", "🙄", "😬", "🤥", "😌", "😔", "😪", "🤤", "😴", "😷", "🤒", "🤕", "🤢", "🤮", "🤧", "🥵", "🥶", "🥴", "😵", "🤯", "🤠", "🥳", "🥺", "😈", "👿", "👹", "👺", "🤡", "💩", "👻", "💀", "☠️", "👽", "👾", "🤖", "🎃", "😺", "😸", "😹", "😻", "😼", "😽", "🙀", "😿", "😾"];
+    const randomIndex = Math.floor(Math.random() * emojis.length);
+    return emojis[randomIndex];
+    }
 
 function verificarArrayAmigos() {
     return amigos.length > 0;
@@ -45,9 +52,16 @@ if (!verificarArrayAmigos()) {
  let nombreSorteado = amigos[indiceAmigoSorteado];
 
  let li = document.createElement("li");
- li.textContent = nombreSorteado;
+ li.textContent = `🎉🎊 ${nombreSorteado} 🎉🎊`;
  listaResultados.appendChild(li);
  amigos.splice(indiceAmigoSorteado, 1);
  actualizarLista;
 
 }
+
+function reiniciarJuego() {
+    amigos = [];
+    listaAmigos.innerHTML = "";
+    listaResultados.innerHTML = "";
+    inputAmigos.focus();
+  }
