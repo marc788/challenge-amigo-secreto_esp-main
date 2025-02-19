@@ -175,3 +175,28 @@ ul {
     color: var(--color-white);
 }
 
+.button-reset {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 15px 40px;
+    color: var(--color-white);
+    background: linear-gradient(90deg, var(--color-button)0%, var(--color-button-hover) 100%);
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 30px;
+    border: none;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow o.2s ease;
+}
+
+
+
+.button-draw:hover {
+    background-color: var(--color-button-hover);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+    color: var(--color-white);
+}
