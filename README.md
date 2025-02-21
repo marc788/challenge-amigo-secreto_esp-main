@@ -7,4 +7,7 @@
 ##### * Paso 2.* Una vez ingresados los nombres de todos los amigos, puedes hacer el sorteo del amigo secreto. Usa para ello el botón Sortear amigo. Te mostrará el nombre de tu amigo que ya ha sido sorteado.
 ##### *Paso 3.* Sí lo deseas puedes reiniciar el juego con tan sólo presionar el bóton Reiniciar.
 ## *Tecnologías usadas* ⌨️
-- *HTML*
+- **HTML**
+- **css**
+- **JavaScript**
+  
